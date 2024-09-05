@@ -1,17 +1,19 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class",
+  darkMode: ["class", "class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "components/**/*.{js,ts,jsx,tsx,mdx}",
+    "utils/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
+      noto: ["Noto Sans", "sans-serif"],
     },
     fontWeight: {
       thin: "100",
@@ -76,8 +78,13 @@ const config: Config = {
           O100: "#8C7668",
         },
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;
