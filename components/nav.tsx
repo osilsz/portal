@@ -36,7 +36,8 @@ export default function NavBar() {
         </div> */}
 
           <SearchInput
-            containerStyle="max-w-72  h-[2.38rem]"
+            hide={true}
+            containerStyle="max-w-72  h-[2.38rem] bg-gray-G020 rounded-md"
             placeholder="Search"
             LeftIcone={() => (
               <IoIosSearch className="text-[20px] text-gray-G1100" />

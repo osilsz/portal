@@ -1,4 +1,5 @@
 declare interface SearchInputProps {
+  hide?: boolean;
   LeftIcone?: React.ComponentType;
   placeholder: string;
   RightIcone?: React.ComponentType;

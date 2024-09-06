@@ -1,4 +1,5 @@
 export default function SearchInput({
+  hide = false,
   LeftIcone,
   placeholder,
   RightIcone,
@@ -7,10 +8,8 @@ export default function SearchInput({
   ...rest
 }: SearchInputProps) {
   return (
-    <div className="flex-1 hidden md:block">
-      <div
-        className={`flex bg-gray-G020   mx-2 rounded-md flex-1 items-center ${containerStyle}`}
-      >
+    <div className={`flex-1 ${hide ? "hidden" : "block"}  md:block`}>
+      <div className={`flex    mx-2  flex-1 items-center ${containerStyle}`}>
         <div className="flex items-center  ps-[17.55px]">
           {LeftIcone && <LeftIcone />}
 

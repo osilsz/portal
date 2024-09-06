@@ -2,8 +2,8 @@ import * as React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import CoverPhoto from "../asstes/people/cover.jpg";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { FaBookmark } from "react-icons/fa";
+import UserImage from "../utils/userprofileimage";
 
 export default function UserProfileInformation() {
   const userInfo = {
@@ -14,7 +14,7 @@ export default function UserProfileInformation() {
   };
 
   return (
-    <Card className="w-[224.98px] bg-white-w100 border  border-l-gray-G900 shadow-none overflow-hidden">
+    <Card className=" w-full bg-white-w100 border  border-l-gray-G900 shadow-none overflow-hidden">
       <CardHeader className="w-full p-0 relative">
         <div className="relative w-[100%] h-[58.09px]">
           <Image
@@ -25,10 +25,11 @@ export default function UserProfileInformation() {
           />
         </div>
         <div className="absolute  top-4 left-1/2 -translate-x-2/4 w-[72px] h-[72px]  bg-white-w100 rounded-full  flex items-center justify-center">
-          <Avatar className="w-[70px] h-[70px] ">
-            <AvatarImage src={userInfo.image} alt="Your Profile Picture" />
-            <AvatarFallback>{userInfo.name.slice(0, 2)}</AvatarFallback>
-          </Avatar>
+          <UserImage
+            name={userInfo.name}
+            image={userInfo.image}
+            AvatarContainerStyle={"w-[70px] h-[70px]"}
+          />
         </div>
       </CardHeader>
 

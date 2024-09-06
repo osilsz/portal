@@ -5,8 +5,9 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FiPlus } from "react-icons/fi";
 
 export default function LatestInformation() {
+  // w-[224.98px]
   return (
-    <Card className="mt-[5.467px] w-[224.98px] bg-white-w100 border  border-l-gray-G900 shadow-none overflow-hidden">
+    <Card className="mt-[5.467px] w-full  bg-white-w100 border  border-l-gray-G900 shadow-none overflow-hidden">
       <CardContent className="p-0">
         <div className="px-[9.98px] mt-4">
           <h2 className="roboto-text-small   text-gray-D100">Latest</h2>
@@ -58,7 +59,7 @@ export default function LatestInformation() {
 
           <div className=" mt-7">
             <div className=" flex justify-between">
-              <h2 className="roboto-text-small text-blue-B100">Groups</h2>
+              <h2 className="roboto-text-small text-blue-B100">Events</h2>
 
               <FiPlus className=" block text-[14px] text-gray-G200" />
             </div>
@@ -70,7 +71,7 @@ export default function LatestInformation() {
         </div>
       </CardContent>
       <hr className=" mt-4  border-gray-G1000" />
-      <CardFooter className="flex justify-center mt-3">
+      <CardFooter className="p-0 flex justify-center mt-3 mb-3">
         <p className="roboto-small text-gray-G200"> Search for new</p>
       </CardFooter>
     </Card>

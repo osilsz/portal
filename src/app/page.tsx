@@ -2,6 +2,7 @@
 
 import LatestInformation from "../../components/latestinformation";
 import NavBar from "../../components/nav";
+import PostBox from "../../components/postbox";
 import UserProfileInformation from "../../components/userprofile";
 
 export default function Home() {
@@ -9,24 +10,18 @@ export default function Home() {
     <>
       <NavBar />
 
-      {/* <div class="grid grid-cols-4 gap-4 mt-36">
-        <div>01</div>
-
-        <div>09</div>
-      </div> */}
-
-      <div className=" gird mt-20 grid-cols-3 md:max-w-6xl md:mx-auto">
-        <div className="  col-span-2">
+      <div className=" grid mt-20 grid-cols-10 lg:max-w-6xl lg:mx-auto">
+        <div className="hidden   lg:block lg:col-span-2">
           <UserProfileInformation />
 
           <LatestInformation />
         </div>
 
-        <div>
-          <h1>hi</h1>
+        <div className="grid-cols-10 lg:col-span-5 px-2 md:px-5">
+          <PostBox />
         </div>
 
-        <div>
+        <div className="hidden lg:block lg:col-span-3">
           <h1>hi</h1>
         </div>
       </div>
