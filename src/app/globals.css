@@ -25,9 +25,27 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+@layer components {
+  .roboto-small {
+    @apply font-roboto    text-sm font-normal; /* text-base 16 */
+  }
+  .roboto-normal-black {
+    @apply font-roboto  text-base font-normal  text-black; /* text-base 16 */
+  }
+  .roboto-text-small {
+    @apply font-roboto   text-xs font-normal;
+  }
+  .roboto-text-small-color-gray {
+    @apply font-roboto   text-xs font-normal  text-gray-G200; /* text-base 12 */
+  }
+}
+
 @layer utilities {
   /* .text-balance {
     text-wrap: balance;
+  } */
+  /* .btn-roboto {
+    @apply font-roboto text-sm font-normal  text-red-400;
   } */
 }
 
