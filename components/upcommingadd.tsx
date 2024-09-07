@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function UpcommingPost() {
   return (
-    <Card className=" w-full  mt-3 bg-white-w100 border  border-l-gray-G900 shadow-none overflow-hidden">
+    <Card className="  w-full  mt-3 bg-white-w100 border  border-l-gray-G900 shadow-none overflow-hidden ">
       <div className="relative w-[100%] h-[251.91px]">
         <Image
           src={add[0].image}

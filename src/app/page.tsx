@@ -27,9 +27,11 @@ export default function Home() {
         <div className="hidden lg:block lg:col-span-3">
           <AddPeople />
 
-          <UpcommingPost />
+          <div className=" lg:sticky   lg:top-20">
+            <UpcommingPost />
 
-          <Policy />
+            <Policy />
+          </div>
         </div>
       </div>
     </>

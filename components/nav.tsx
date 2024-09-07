@@ -8,9 +8,17 @@ import Link from "next/link";
 import Image from "next/image";
 import femaleImage from "../asstes/people/female.png";
 import { IoMdArrowDropdown } from "react-icons/io";
+import UserImage from "../utils/userprofileimage";
 
 export default function NavBar() {
   const [searchInput, setSearchInput] = useState("");
+
+  const userInfo = {
+    name: "Username",
+    image:
+      "https://cdn.prod.website-files.com/63ce921b1a2c847a9792d321/6424728d4fc3514c3ef24721_Health%20Insurance.webp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+  };
 
   return (
     <header>
@@ -57,9 +65,11 @@ export default function NavBar() {
                     className=" flex flex-col items-center justify-center"
                   >
                     {item?.navText === "Profile" ? (
-                      <div className="relative w-[25px] h-[25px] rounded-full">
-                        {item?.navIcone}
-                      </div>
+                      <UserImage
+                        name={userInfo.name}
+                        image={userInfo.image}
+                        AvatarContainerStyle={"  w-[25px] h-[25px] "}
+                      />
                     ) : (
                       item?.navIcone
                     )}
