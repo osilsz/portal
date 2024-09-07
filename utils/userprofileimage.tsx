@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 
 export default function UserImage({
   name,
@@ -10,8 +11,12 @@ export default function UserImage({
   AvatarContainerStyle?: string;
 }) {
   return (
-    <Avatar className={` ${AvatarContainerStyle}`}>
-      <AvatarImage src={image} alt="Your Profile Picture" />
+    <Avatar className={` ${AvatarContainerStyle} overflow-hidden`}>
+      <AvatarImage
+        src={image}
+        alt="Your Profile Picture"
+        className=" object-cover"
+      />
       <AvatarFallback>{name.slice(0, 2)}</AvatarFallback>
     </Avatar>
   );

@@ -8,3 +8,10 @@ declare interface SearchInputProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value: string;
 }
+
+declare interface ButtonProp {
+  LeftIcone?: React.ComponentType;
+  title: string;
+  RightIcone?: React.ComponentType;
+  btncontainer?: string;
+}

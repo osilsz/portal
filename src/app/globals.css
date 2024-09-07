@@ -38,6 +38,10 @@ body {
   .roboto-text-small-color-gray {
     @apply font-roboto   text-xs font-normal  text-gray-G200; /* text-base 12 */
   }
+
+  .roboto-text-thin-black {
+    @apply font-roboto font-light text-[10px]  text-black;
+  }
 }
 
 @layer utilities {

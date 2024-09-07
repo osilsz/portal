@@ -1,8 +1,11 @@
 // import Image from "next/image";
 
+import AddPeople from "../../components/addpeople";
 import LatestInformation from "../../components/latestinformation";
+import PostManageContainer from "../../components/middlepart.post";
 import NavBar from "../../components/nav";
-import PostBox from "../../components/postbox";
+import Policy from "../../components/policey";
+import UpcommingPost from "../../components/upcommingadd";
 import UserProfileInformation from "../../components/userprofile";
 
 export default function Home() {
@@ -18,11 +21,15 @@ export default function Home() {
         </div>
 
         <div className="grid-cols-10 lg:col-span-5 px-2 md:px-5">
-          <PostBox />
+          <PostManageContainer />
         </div>
 
         <div className="hidden lg:block lg:col-span-3">
-          <h1>hi</h1>
+          <AddPeople />
+
+          <UpcommingPost />
+
+          <Policy />
         </div>
       </div>
     </>
