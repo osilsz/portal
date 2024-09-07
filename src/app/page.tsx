@@ -14,17 +14,17 @@ export default function Home() {
       <NavBar />
 
       <div className=" grid mt-20 grid-cols-10 lg:max-w-6xl lg:mx-auto">
-        <div className="hidden   lg:block lg:col-span-2">
+        <div className="col-span-2">
           <UserProfileInformation />
 
           <LatestInformation />
         </div>
 
-        <div className="grid-cols-10 lg:col-span-5 px-2 md:px-5">
+        <div className="col-span-5 px-2 md:px-5">
           <PostManageContainer />
         </div>
 
-        <div className="hidden lg:block lg:col-span-3">
+        <div className="col-span-3">
           <AddPeople />
 
           <div className=" lg:sticky   lg:top-20">
@@ -36,4 +36,28 @@ export default function Home() {
       </div>
     </>
   );
+}
+
+{
+  /* <div className=" grid mt-20 grid-cols-10 lg:max-w-6xl lg:mx-auto">
+<div className="hidden   lg:block lg:col-span-2">
+  <UserProfileInformation />
+
+  <LatestInformation />
+</div>
+
+<div className="grid-cols-10 lg:col-span-5 px-2 md:px-5">
+  <PostManageContainer />
+</div>
+
+<div className="hidden lg:block lg:col-span-3">
+  <AddPeople />
+
+  <div className=" lg:sticky   lg:top-20">
+    <UpcommingPost />
+
+    <Policy />
+  </div>
+</div>
+</div> */
 }
