@@ -6,7 +6,7 @@ export default function Cards({
   title,
 }: {
   image: string;
-  title: string;
+  title: string | null;
 }) {
   return (
     <Card className="mt-5 mb-5 w-full bg-white-w100 border  border-l-gray-G900 shadow-none overflow-hidden">
@@ -19,9 +19,11 @@ export default function Cards({
           className=" w-full h-full"
         />
       </div>
-      <div className=" my-4  mx-6">
-        <p className="roboto-normal-black">{title}</p>
-      </div>
+      {title && (
+        <div className=" my-4  mx-6">
+          <p className="roboto-normal-black line-clamp-1">{title}</p>
+        </div>
+      )}
     </Card>
   );
 }

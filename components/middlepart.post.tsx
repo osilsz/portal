@@ -30,11 +30,11 @@ export default function PostManageContainer() {
 
       <AllPost />
 
-      <div className=" mt-2"></div>
+      {/* <div className=" mt-2"></div>
 
       <AllPost />
 
-      <div className=" mt-2"></div>
+      <div className=" mt-2"></div> */}
     </>
   );
 }
