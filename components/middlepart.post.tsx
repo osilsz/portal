@@ -35,6 +35,8 @@ export default function PostManageContainer() {
       <AllPost />
 
       <div className=" mt-2"></div> */}
+
+      <div className="mb-4"></div>
     </>
   );
 }

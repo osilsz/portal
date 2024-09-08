@@ -7,6 +7,8 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import CoverPhoto from "../asstes/people/cover.jpg";
 import cardone from "../asstes/card/image-0.jpeg";
+import cardtwo from "../asstes/card/image-1.jpg";
+import cardthree from "../asstes/card/image-3.jpg";
 import { FaBookmark, FaHeart } from "react-icons/fa";
 import UserImage from "../utils/userprofileimage";
 import { HiDotsHorizontal } from "react-icons/hi";
@@ -209,7 +211,7 @@ const cards = [
     title: "Etiam vulputate mollis sem, vel placerat enim finibus vel.",
   },
   {
-    image: cardone,
+    image: cardtwo,
     title: "Another card with some title.",
   },
   {
@@ -258,7 +260,7 @@ const postContent = [
     follower: "400 followers",
     Promoted: false,
     carousel: false,
-    card: { image: cardone, title: null },
+    card: { image: cardthree, title: null },
     company: false,
   },
   {
