@@ -82,11 +82,14 @@ export default function AllPost() {
             </CardContent>
 
             <CardContent className="p-0">
-              {!item?.carousel && item?.card ? (
+              {!item?.carousel && item?.card && !Array.isArray(item?.card) ? (
                 <Cards image={item?.card?.image} title={item?.card?.title} />
               ) : null}
 
-              {item?.carousel ? <Carousel cards={item?.card} /> : null}
+              {/* Handle the case where the card is an array (for carousel) */}
+              {item?.carousel && Array.isArray(item?.card) ? (
+                <Carousel cards={item?.card} />
+              ) : null}
 
               <div className=" mb-4 flex justify-between">
                 <div className=" flex">
