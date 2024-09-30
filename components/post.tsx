@@ -5,11 +5,10 @@
 import * as React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
-import CoverPhoto from "../asstes/people/cover.jpg";
 import cardone from "../asstes/card/image-0.jpeg";
 import cardtwo from "../asstes/card/image-1.jpg";
 import cardthree from "../asstes/card/image-3.jpg";
-import { FaBookmark, FaHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import UserImage from "../utils/userprofileimage";
 import { HiDotsHorizontal } from "react-icons/hi";
 import Cards from "../utils/card";

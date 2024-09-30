@@ -1,4 +1,3 @@
-import { IoMdArrowDropdown } from "react-icons/io";
 import PostBox from "./postbox";
 import { DropdownMenuContents } from "../utils/dropdown";
 import AllPost from "./post";
